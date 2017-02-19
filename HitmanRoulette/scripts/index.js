@@ -5,8 +5,17 @@ window.onload = function() {
 	 randomBangkok();
 	 randomColorado();
 	 randomHokkaido();
+	 console.log("images loaded");
+	 clearScreen();
+}
+
+function clearScreen() {
+	// document.getElementById('loading-blocker').className = "hidden";
+	$("#loading-blocker").fadeOut();
+	console.log("Run clearScreen");
 
 }
+
 
 function randomParis () {
 	var randNum = Math.floor((Math.random() * 3) + 1);

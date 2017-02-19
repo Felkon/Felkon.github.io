@@ -84,3 +84,17 @@ h2{
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
+
+#loading-blocker {
+	background-image: url("img/ui/bg.png");
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	height: 100%;
+}
+
+.hidden {
+	display: none;
+}
