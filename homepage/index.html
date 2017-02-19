@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HOME PAGE</title>
+		<link rel="stylesheet" href="rose.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<img src="rose.jpg">
+			<div class="links">
+				<span>おかえりなさい</span>
+				&gt<a href="https://youtube.com/feed/subscriptions">Youtube</a> -
+				<a href="https://twitch.tv/directory">Twitch</a> -
+				<a href="https://soundcloud.com/stream">SoundCloud</a><br>
+				&gt<a href="https://www.ozbargain.com.au/">OzBargain</a> -
+				<a href="https://facepunch.com/">Facepunch</a><br>
+				&gt<a href="https://twitter.com/">Twitter</a> -
+				<a href="https://www.facebook.com/">FB</a> - 
+				<a href="https://www.facebook.com/messages">Messenger</a> - 
+				<a href="https://drive.google.com/">GDrive</a><br>
+				&gt<a href="http://myanimelist.net/animelist/doshi619">MyAnimeList</a> -
+				<a href="http://anichart.net/airing">AniChart</a><br>
+				&gt<a href="https://www.nyaa.se/">nyaa</a> -
+				<a href="http://www.shanaproject.com/">Shana</a> -
+				<a href="http://rutracker.org/forum/index.php">RU</a> - 
+				<a href="https://passtheheadphones.me/">PTH</a> - 
+				<a href="https://ultimategamer.club/">UGC</a> - 
+				<a href="https://MoreThan.tv/">MTV</a><br>
+				&gt<a href="https://boards.4chan.org/g/">/g/</a> -
+				<a href="https://boards.4chan.org/v/">/v/</a> -
+				<a href="https://boards.4chan.org/mu/">/mu/</a> -
+				<a href="https://boards.4chan.org/wsg/">/wsg/</a> -
+				<a href="https://boards.4chan.org/wg/">/wg/</a><br>
+				&gt<a href="https://reddit.com/r/anime">Anime</a> -
+				<a href="https://reddit.com/r/xtrill">xTrill</a> -
+				<a href="https://reddit.com/r/hiphopheads">HHH</a> -
+				<a href="https://reddit.com/r/me_irl">me_irl</a> -
+				<a href="https://reddit.com/r/games">Games</a><br>
+				&gt<a href="https://reddit.com/r/crackwatch">CrackWatch</a> -
+				<a href="https://reddit.com/r/gamedeals">GameDeals</a> -
+				<a href="https://reddit.com/r/overwatch">Overwatch</a><br>
+
+			</div>
+			<div class="colors">
+				<div class="color1"></div>
+				<div class="color2"></div>
+				<div class="color3"></div>
+				<div class="color4"></div>
+			</div>
+		</div>
+
+		<div class="wrapper2">
+				<div class="googleSearchBar">
+					<img src="search.png">
+					<input id="googleAddress" type="text" autofocus>
+				</div>
+				<div class="redditSearchBar">
+					<img src="reddit.png">
+					<input id="redditAddress" type="text" >
+				</div>
+		</div>
+
+		<div class="credits">
+			<a href="https://github.com/Tropiz/homepage-rose" style="margin-bottom: 0px;"> Original by: Tropiz</a>
+		</div>
+
+		<script>
+			function searchCheck(e) {
+				var x = e.keyCode;
+				if (x == 13) {
+					if (document.activeElement.id == "redditAddress") {
+						var address = document.getElementById("redditAddress").value;
+						var searchAddress = "HTTP://reddit.com/r/"+address
+						window.open(searchAddress,"_self");
+						console.log("Reddit To Be Searched");
+					}
+					else {
+						var address = document.getElementById("googleAddress").value;
+						var searchAddress = "http://www.google.com/search?q="+address
+						window.open(searchAddress,"_self");
+						console.log("Google To Be Searched");	
+					}
+				}
+			}
+			document.addEventListener('keydown', searchCheck);
+		</script>
+	</body>
+</html>

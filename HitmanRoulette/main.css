@@ -1,0 +1,86 @@
+@font-face{
+	font-family: "HITMAN";
+	src: url(font/hitmen.otf) format("OpenType");
+}
+
+html {
+	background-image: url("img/ui/bg.png");
+	color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover {
+	color: #A39991;
+}
+
+h1 {
+	margin: 5px;
+	font-size: 28px;
+	color: black;
+	text-align: center;
+}
+
+h2{
+	margin: 5px;
+	font-size: 16px;
+	color: gray;
+	text-align: center;
+}
+
+#container {
+	/*background-color: orange;*/
+	padding-top: 35px; 
+	margin: 0 auto;
+	max-width: 75%;
+}
+
+#logo {
+	/*background-color: gray;*/
+	margin: 0 auto;
+	text-align: center;
+	font-family: "HITMAN";
+	color: white;
+	font-size: 14pt;
+	max-width: 500px;
+}
+
+#logoText {
+	font-family: "HITMAN";
+    white-space:pre; // or pre-wrap if you want wrapping to still work.
+}
+
+#episodes {
+	margin: 0 auto;
+	margin-top: 60px;
+	/*background-color: red;*/
+	height: 600px;	
+	display: flex;
+	flex-direction: row;
+	font-family: "HITMAN";
+}
+
+.main-episodes {
+	background-color: white;
+	color: black;
+	width: 16%;
+	border-radius: 7px;
+	margin: 15px;
+	background-position: center top;
+}
+
+.bonus-episodes {
+	background-color: orange;
+	width: 220px;
+}
+
+.episode-image-location {
+	background-position: center top;
+	height: 500px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}

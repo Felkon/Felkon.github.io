@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/MyStyle.css">	
+	<title>KAZ</title>
+	<script type="text/javascript" src="javascript/rattle.js"> </script>
+	<script type="text/javascript" src="javascript/music.js"> </script>
+	<script type="text/javascript" src="javascript/jquery-3.1.1.min.js"></script>
+</head>
+
+
+<body>
+	<div id="container">
+		<div class="fiddled">		
+			<h1 id="fiddledText">PLAYED LIKE A DAMN FIDDLE!</h1>
+ 		</div>
+		
+		<div> 
+			<img id="imgShake" src="images/LIKEADAMNFIDDLE/FIDDLE.jpg" class="shakeimage" onload=
+			"init(this);mainRattle();initMusic();"
+			style="opacity:0.7">		
+		</div>
+	</div>
+	<div id="mute" onclick="stopMusic()">MUTE</div>	
+
+</body>
+
+<footer class="fiddleFooter">		
+	Felkon | <a id="links" href="https://www.youtube.com/watch?v=cYrh5h9acg8">SOURCE</a>
+</footer>
+
+<script>
+</script>
+
+
+<audio id="bgAudio" loop muted>
+		<source src="audio/They_Played_Us_Like_A_Damn_Fiddle_(F1NG3RS_MGSV_Extended_Bitch_Remix).mp3" type="audio/mp3">
+</audio>
+
+<video autoplay loop id="bgVideoSnow" class="bgVideo" >
+    <source src="video/rain.webm" type="video/webm">
+    <source src="video/rainclouds.mp4" type="video/mp4">
+</video>
+<video autoplay loop id="bgVideoFire" class="bgVideo">
+    <source src="video/fire.webm" type="video/webm">
+    <source src="video/rainclouds.mp4" type="video/mp4">
+</video>
+<!-- disable the music, add buttons to control the FUCKING SPAZ ATTACKS -->

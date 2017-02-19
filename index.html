@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/MyStyle.css">	
+	<title>Felkon's Website</title>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">		
+			<h1 class="customFont">Felkon's Site</h1>
+ 		</div>
+		<div id="body"> 
+			<table class="topMenu">	
+				<tr> 
+					<td id="menuWidth">
+						<div class="dropdown">
+							<button onclick="myFunction()" class="dropbtn">
+								Memes 
+							</button>
+
+							<div id="myDropdown" class="dropdown-content">
+								<a class="rulesOfNature" href="#">Memes of Nature</a>
+								<a class="likeADamnFiddle" href="LIKEADAMNFIDDLE.html">LIKE A DAMN FIDDLE</a>
+								<a href="#">Link 3</a>
+							</div>
+						</div>	
+					</td>
+					<td id="menuWidth"> </td>
+					<td id="menuWidth"> </td>
+					<td id="menuWidth"> </td>
+					<td id="menuWidth"> </td>
+					<td id="menuWidth"> </td>
+					<td id="menuWidth"> </td>
+					<td id="menuWidth"> </td>
+					<td id="menuWidth"> </td>
+					<td id="menuWidth"> </td>
+
+
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div id="parent">
+		<div id="wide">Wide (rest of width)</div>
+		<div id="narrow">Narrow (200px)</div>
+	</div>	
+
+
+
+	<script>
+	/* When the user clicks on the button,
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+	
+			var dropdowns = document.getElementsByClassName("dropdown");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+	</script>
+
+</body>
