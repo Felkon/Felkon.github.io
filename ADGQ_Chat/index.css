@@ -1,0 +1,45 @@
+html {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body {
+	background-color: rgb(100,65,164);
+}
+
+#title {
+color: black;
+
+}
+
+
+#tabs {
+	min-height: 5%;
+	max-height: 5%;
+}
+
+#wrapper {
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+#first {
+    width: 75%;
+    height: 94%;
+    float:left; /* add this */
+    padding-top: 45px;
+}
+#second {
+	min-width: 20%;
+    height: 89.5%;
+    padding-left: 15px;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+
+.tab_colour {
+	background-color: rgb(14,157,217)
+}
+
+.link_colour {
+color: black;
+
+}
+

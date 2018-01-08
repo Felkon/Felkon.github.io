@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body style="background-color: rgb(100,65,164)">
+		<h1 id="title"> AGDQ BetterChat </h1>
+		<div id="wrapper">
+			<div id="first">
+				<iframe
+					id="video"
+					src="http://player.twitch.tv/?channel=gamesdonequick"
+					height="90%"
+					width="100%"
+					frameborder="0"
+					scrolling="no"
+					allowfullscreen="true">
+				</iframe>
+			</div>
+			<div id="second">
+				<ul id="tabs" class="nav nav-tabs">
+				  <li class="tab_colour active"><a class="link_colour" data-toggle="tab" href="#chat_agdq">AGDQ</a></li>
+				  <li class="tab_colour" ><a  class="link_colour" data-toggle="tab" href="#chat_trihex">TriHex</a></li>
+				  <li class="tab_colour" ><a class="link_colour" data-toggle="tab" href="#menu3">Menu 3</a></li>
+				  <li class="tab_colour" ><a class="link_colour" data-toggle="tab" href="#menu4">Menu 4</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="chat_agdq" class="tab-pane fade in active">
+						<iframe id="chat" 
+							frameborder="0" 
+							scrolling="no" 
+							id="chat_embed" 
+							src="http://www.twitch.tv/embed/gamesdonequick/chat" 
+							height="90%"
+							width="100%" >
+						</iframe>
+					</div>
+					<div id="chat_trihex" class="tab-pane fade">
+						<iframe id="chat" 
+							frameborder="0" 
+							scrolling="no" 
+							id="chat_embed" 
+							src="http://www.twitch.tv/embed/trihex/chat" 
+							height="90%" 
+							width="100%">
+						</iframe>
+					</div>
+					<div id="menu3" class="tab-pane fade">
+						<h3>Menu 3</h3>
+						<p>Some content in menu 2.</p>
+					</div>
+					<div id="menu4" class="tab-pane fade">
+						<h3>Menu 4</h3>
+						<p>Some content in menu 2.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
